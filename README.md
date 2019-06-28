@@ -31,9 +31,40 @@ The output should consist of **K** lines. Each line consists of the number of go
 
 ### Example
 
-Input | Output
---- | ---
-3<br/>2<br/>Salah 2<br/>Trezeguet 4<br/>3<br/>Elmohamady 3<br/>AmrWarda 1<br/>Hegazi 2<br/>2<br/>MarawanMohsen 1<br/>Salah 3<br/>3<br/>Trezeguet<br/>Salah<br/>Elmohamady | 3<br/>0<br/>4
+<details>
+  <summary>Input </summary>
+  <pre>
+    <code>
+3
+2
+Salah 2
+Trezeguet 4
+3
+Elmohamady 3
+AmrWarda 1
+Hegazi 2
+2
+MarawanMohsen 1
+Salah 3
+3
+Trezeguet
+Salah
+Elmohamady 
+    </code>
+  </pre>
+</details>
+
+<details>
+  <summary>Output </summary>
+  <pre>
+<code> 
+3
+0
+4
+</code>
+  </pre>
+</details>
+
 
 
 
