@@ -14,11 +14,12 @@ The players are busy training. We heard that you are a clever developer so we ar
 
 
 ### Input
-
-(1 ≤ N ≤ 100) — The number of matches played.<br/>
-(1 ≤ M ≤ 23) — The number of players who scored at the match.<br/>
-(1 ≤ S ≤ 10) — The number of goals scored by a player at the match.<br/>
-(1 ≤ K ≤ 15) — The number of queries.
+Variable | Description
+--- | ---
+(1 ≤ N ≤ 100) | The number of matches played.<br/>
+(1 ≤ M ≤ 23) | The number of players who scored at the match.<br/>
+(1 ≤ S ≤ 10) | The number of goals scored by a player at the match.<br/>
+(1 ≤ K ≤ 15) | The number of queries.
 
 
 
@@ -30,31 +31,13 @@ The output should consist of **K** lines. Each line consists of the number of go
 
 ### Example
 
-#### Input
+Input | Output
+--- | ---
+3<br/>2<br/>Salah 2<br/>Trezeguet 4<br/>3<br/>Elmohamady 3<br/>AmrWarda 1<br/>Hegazi 2<br/>2<br/>MarawanMohsen 1<br/>Salah 3<br/>3<br/>Trezeguet<br/>Salah<br/>Elmohamady | 3<br/>0<br/>4
 
-3<br/>
-2<br/>
-Salah 2<br/>
-Trezeguet 4<br/>
-3<br/>
-Elmohamady 3<br/>
-AmrWarda 1<br/>
-Hegazi 2<br/>
-2<br/>
-MarawanMohsen 1<br/>
-Salah 3<br/>
-3<br/>
-Trezeguet<br/>
-Salah<br/>
-Elmohamady
 
-#### Output
 
-3<br/>
-0<br/>
-4
-
-----
+___
 
 Problem Credits (Written and Tested by) [@Kerolloz](https://github.com/kerolloz)<br/>
 Solutions Judged and Maintained [@CodeCoursez](https://github.com/CodeCoursez)<br/>
