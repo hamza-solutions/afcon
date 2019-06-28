@@ -55,6 +55,10 @@ body {
   padding-left: 25px;
 }
 
+.submission.column .verdict p {
+  margin: 0 !important;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     padding: 15px;

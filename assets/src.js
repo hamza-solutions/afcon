@@ -128,7 +128,7 @@ function getParam(key) {
   return null;
 }
 
-function verdictResponse(id, verdict) {
+function verdictResponse(id, verdict, user) {
   let response = '<p>Submission <a href="?submission=' + id + '">#';
   response += id;
   response += '</a>';
@@ -154,6 +154,19 @@ function verdictResponse(id, verdict) {
 
   response += '</p>';
 
+  if (user) {
+    response += '<p>';
+    response +=
+      '<span class="ui grey text" style="margin-right: 10px;"><i class="user icon"></i>' +
+      user.name +
+      '</span> ';
+    response +=
+      '<span class="ui grey text"> <i class="envelope icon"></i>' +
+      user.email +
+      '</span>';
+    response += '</p>';
+  }
+
   return response;
 }
 
@@ -163,7 +176,7 @@ function checkSubmission(submission) {
     url: 'https://codecoursez-afcon.herokuapp.com/submissions/' + submission
   })
     .done(function(res) {
-      $('.verdict').html(verdictResponse(submission, res.verdict));
+      $('.verdict').html(verdictResponse(submission, res.verdict, res.user));
       if (
         res.verdict === 'JUDGING' ||
         res.verdict === 'IN_QUEUE' ||
@@ -171,7 +184,7 @@ function checkSubmission(submission) {
       ) {
         setTimeout(function() {
           checkSubmission(submission);
-        }, 2000);
+        }, 5000);
       }
     })
     .fail(function(res) {
