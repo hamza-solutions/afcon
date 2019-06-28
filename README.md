@@ -1,4 +1,7 @@
 # Hamza Solutions | AFCON Challenge
+Submit your solution at https://hamza-solutions.github.io/afcon/
+
+
 
 ### Problem Statment
 
@@ -8,46 +11,51 @@ You are given **N** (the number of matches played) followed by N match descripti
 
 The players are busy training. We heard that you are a clever developer so we are challenging you to help the Egyptian players to know the minimum number of goals each player needs to score to be the man of AFCON.
 
+
+
 ### Input
 
-(1 ≤ N ≤ 100) — The number of matches played.
-(1 ≤ M ≤ 23) — The number of players who scored at the match.
-(1 ≤ S ≤ 10) — The number of goals scored by a player at the match.
+(1 ≤ N ≤ 100) — The number of matches played.<br/>
+(1 ≤ M ≤ 23) — The number of players who scored at the match.<br/>
+(1 ≤ S ≤ 10) — The number of goals scored by a player at the match.<br/>
 (1 ≤ K ≤ 15) — The number of queries.
+
+
 
 ### Output
 
 The output should consist of **K** lines. Each line consists of the number of goals the player needs to score in the next match to be the man of AFCON.
 
+
+
 ### Example
 
 #### Input
 
-3
-2
-Salah 2
-Trezeguet 4
-3
-Elmohamady 3
-AmrWarda 1
-Hegazi 2
-2
-MarawanMohsen 1
-Salah 3
-3
-Trezeguet
-Salah
+3<br/>
+2<br/>
+Salah 2<br/>
+Trezeguet 4<br/>
+3<br/>
+Elmohamady 3<br/>
+AmrWarda 1<br/>
+Hegazi 2<br/>
+2<br/>
+MarawanMohsen 1<br/>
+Salah 3<br/>
+3<br/>
+Trezeguet<br/>
+Salah<br/>
 Elmohamady
 
 #### Output
 
-3
-0
+3<br/>
+0<br/>
 4
-
 
 ----
 
-Problem Credits (Written and Tested by) [@Kerolloz](https://github.com/kerolloz)
-Solutions Judged and Maintained [@CodeCoursez](https://github.com/CodeCoursez)
+Problem Credits (Written and Tested by) [@Kerolloz](https://github.com/kerolloz)<br/>
+Solutions Judged and Maintained [@CodeCoursez](https://github.com/CodeCoursez)<br/>
 Made with ♥️ [@HamzaSolutions](http://hamza.solutions/)
