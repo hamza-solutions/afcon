@@ -194,7 +194,7 @@ for (var player of players) {
       '"/>' +
       '</div>' +
       '</div>' +
-      '<div class="ui popup" style="width: 200px; padding: 0 !important; background: none; border: none; box-shadow: none;">' +
+      '<div class="ui popup" style="width: 200px; padding: 0 !important; top: 50px !important; background: none; border: none; box-shadow: none;">' +
       '<div class="ui yellow image label">' +
       player.name +
       '<div class="detail">' +
