@@ -96,12 +96,13 @@
           <div class="ui segment">
             <p>(1 ≤ M ≤ 23) — The number of players who scored at the match.</p>
           </div>
-          <div class="ui segment" >
+          <div class="ui segment">
             <p>
-              (1 ≤ S ≤ 10) — The number of goals scored by a player at the match.
+              (1 ≤ S ≤ 10) — The number of goals scored by a player at the
+              match.
             </p>
           </div>
-          <div class="ui segment" >
+          <div class="ui segment">
             <p>(1 ≤ K ≤ 15) — The number of queries.</p>
           </div>
         </div>
@@ -207,7 +208,10 @@
               <p>Hamza will contact the Winner</p>
             </div>
           </div>
+
         </h2>
+
+        <div class="ui hidden message verdict"></div>        
 
         <div class="ui form">
           <div class="required field">
@@ -225,7 +229,7 @@
               <i class="envelope icon"></i>
             </div>
           </div>
-          
+
           <div class="required field">
             <label for="facebook">Facebook Profile Link</label>
             <div class="ui icon input">
@@ -259,6 +263,14 @@
 
           <div class="ui fluid submit button">Submit</div>
           <div class="ui error message"></div>
+        </div>
+
+        <div class="ui hidden icon success message successfully-submitted">
+          <i class="check icon"></i>
+          <div class="content">
+            <div class="header">Form Submitted</div>
+            <p>Your submission has been submitted successfully.</p>
+          </div>
         </div>
       </div>
     </div>
