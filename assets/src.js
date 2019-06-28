@@ -128,48 +128,64 @@ function getParam(key) {
   return null;
 }
 
-const submission = getParam('submission');
-if (submission) {
-  $('.verdict').removeClass('hidden');
-  $('.verdict').html(
-    '<p>Submission #' +
-      submission +
-      ' <i class="notched circle loading icon"></i></p>'
-  );
+function verdictResponse(id, verdict) {
+  let response = '<p>Submission <a href="?submission=' + id + '">#';
+  response += id;
+  response += '</a>';
+
+  let label = '';
+  if (verdict) {
+    label = 'red';
+    if (
+      verdict === 'JUDGING' ||
+      verdict === 'IN_QUEUE' ||
+      verdict === 'PROCESSING'
+    ) {
+      label = 'yellow';
+    } else if (verdict === 'ACCEPTED') {
+      label = 'green';
+    }
+    response += ' <span class="ui ' + label + ' label">' + verdict + ' </span>';
+  }
+
+  if (!verdict || label === 'yellow') {
+    response += ' <i class="notched circle loading icon"></i>';
+  }
+
+  response += '</p>';
+
+  return response;
+}
+
+function checkSubmission(submission) {
   $.ajax({
     type: 'GET',
     url: 'https://codecoursez-afcon.herokuapp.com/submissions/' + submission
   })
     .done(function(res) {
-      let label = 'red';
+      $('.verdict').html(verdictResponse(submission, res.verdict));
       if (
         res.verdict === 'JUDGING' ||
         res.verdict === 'IN_QUEUE' ||
         res.verdict === 'PROCESSING'
       ) {
-        label = 'yellow';
-      } else if (res.verdict === 'ACCEPTED') {
-        label = 'green';
+        setTimeout(function() {
+          checkSubmission(submission);
+        }, 2000);
       }
-      $('.verdict').html(
-        '<p>Submission #' +
-          submission +
-          ' <span class="ui ' +
-          label +
-          ' label">' +
-          res.verdict +
-          '</span></p>'
-      );
     })
     .fail(function(res) {
       if ((res.status = 404)) {
-        $('.verdict').html(
-          '<p>Submission #' +
-            submission +
-            ' <span class="ui red label">Not Found</span></p>'
-        );
+        $('.verdict').html(verdictResponse(submission, 'Not Found'));
       } else {
         $('.verdict').addClass('hidden');
       }
     });
+}
+
+const submission = getParam('submission');
+if (submission) {
+  $('.verdict').removeClass('hidden');
+  $('.verdict').html(verdictResponse(submission));
+  checkSubmission(submission);
 }
