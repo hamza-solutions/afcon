@@ -39,7 +39,7 @@
     </h2>
 
     <div class="ui stackable main grid">
-      <div class="nine wide problem column">
+      <div class="nine wide problem column" style="padding-left: 0 !important; padding-right: 0 !important;">
         <div class="ui doubling twelve column grid players"></div>
         <span class="ui medium grey text">
           Players info and images credit
@@ -162,13 +162,12 @@
 
         <div class="ui section divider" style="margin-bottom: 10px;"></div>
 
-        <h3 class="ui header" style="margin: 0;">
+        <h3 class="ui header credits" style="margin: 0;">
           <img
             src="./images/hamza.png"
             class="ui rounded image"
             style="margin: 0;"
           />
-
           <div class="content">
             <div class="sub header">
               <p>
@@ -195,81 +194,82 @@
         </h3>
       </div>
 
-      <div class="seven wide submission column">
-        <h2 class="ui header">
-          <img
-            src="./images/hamza.png"
-            class="ui rounded image"
-            style="margin: 0;"
-          />
-          <div class="content">
-            Submit Your Solution
-            <div class="sub header">
-              <p>Hamza will contact the Winner</p>
-            </div>
-          </div>
-
-        </h2>
-
-        <div class="ui hidden message verdict"></div>        
-
-        <div class="ui form">
-          <div class="required field">
-            <label for="name">Name</label>
-            <div class="ui icon input">
-              <input id="name" type="text" placeholder="Name" />
-              <i class="user icon"></i>
-            </div>
-          </div>
-
-          <div class="required field">
-            <label for="email">Email</label>
-            <div class="ui icon input">
-              <input id="email" type="email" placeholder="Email" />
-              <i class="envelope icon"></i>
-            </div>
-          </div>
-
-          <div class="required field">
-            <label for="facebook">Facebook Profile Link</label>
-            <div class="ui icon input">
-              <input
-                id="facebook"
-                type="text"
-                placeholder="Facebook Profile Link"
-              />
-              <i class="facebook square icon"></i>
-            </div>
-          </div>
-
-          <div class="required field">
-            <label for="language">Programming Language</label>
-            <div class="ui selection dropdown">
-              <input id="language" name="language" type="hidden" />
-              <i class="dropdown icon"></i>
-              <div class="default text">Programming Language</div>
-              <div class="menu">
-                <div class="item" data-value="1">C++ (7.2.0)</div>
-                <div class="item" data-value="2">Python 3.6</div>
-                <div class="item" data-value="3">Java 7</div>
+      <div class="seven wide submission column" style="padding-left: 0 !important; padding-right: 0 !important;">
+        <div class="submission-content">
+          <h2 class="ui header">
+            <img
+              src="./images/hamza.png"
+              class="ui rounded image"
+              style="margin: 0;"
+            />
+            <div class="content">
+              Submit Your Solution
+              <div class="sub header">
+                <p>Hamza will contact the Winner</p>
               </div>
             </div>
+          </h2>
+
+          <div class="ui hidden message verdict"></div>        
+
+          <div class="ui form">
+            <div class="required field">
+              <label for="name">Name</label>
+              <div class="ui icon input">
+                <input id="name" type="text" placeholder="Name" />
+                <i class="user icon"></i>
+              </div>
+            </div>
+
+            <div class="required field">
+              <label for="email">Email</label>
+              <div class="ui icon input">
+                <input id="email" type="email" placeholder="Email" />
+                <i class="envelope icon"></i>
+              </div>
+            </div>
+
+            <div class="required field">
+              <label for="facebook">Facebook Profile Link</label>
+              <div class="ui icon input">
+                <input
+                  id="facebook"
+                  type="text"
+                  placeholder="Facebook Profile Link"
+                />
+                <i class="facebook square icon"></i>
+              </div>
+            </div>
+
+            <div class="required field">
+              <label for="language">Programming Language</label>
+              <div class="ui selection dropdown">
+                <input id="language" name="language" type="hidden" />
+                <i class="dropdown icon"></i>
+                <div class="default text">Programming Language</div>
+                <div class="menu">
+                  <div class="item" data-value="1">C++ (7.2.0)</div>
+                  <div class="item" data-value="2">Python 3.6</div>
+                  <div class="item" data-value="3">Java 7</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="required field">
+              <label for="code">Source Code</label>
+              <textarea id="code"></textarea>
+            </div>
+
+            <div class="ui fluid submit button">Submit</div>
+            <div class="ui error message"></div>
           </div>
 
-          <div class="required field">
-            <label for="code">Source Code</label>
-            <textarea id="code"></textarea>
-          </div>
-
-          <div class="ui fluid submit button">Submit</div>
-          <div class="ui error message"></div>
-        </div>
-
-        <div class="ui hidden icon success message successfully-submitted">
-          <i class="check icon"></i>
-          <div class="content">
-            <div class="header">Form Submitted</div>
-            <p>Your submission has been submitted successfully.</p>
+          <div class="ui hidden icon success message successfully-submitted">
+            <i class="check icon"></i>
+            <div class="content">
+              <div class="header">Form Submitted</div>
+              <p>Your submission has been submitted successfully.</p>
+            </div>
           </div>
         </div>
       </div>

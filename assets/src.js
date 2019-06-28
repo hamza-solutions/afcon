@@ -32,10 +32,6 @@ $('.ui.form').form({
       identifier: 'name',
       rules: [
         {
-          type: 'empty',
-          prompt: 'Please enter your name'
-        },
-        {
           type: 'minLength[5]',
           prompt: 'Name must be at least {ruleValue} characters'
         }

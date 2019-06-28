@@ -21,10 +21,15 @@ body {
   padding: 0 !important;
 }
 
+.problem.column .players .player {
+  margin: 0 5px 5px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  line-height: 0 !important;
+}
+
 .problem.column .players .player img {
   width: 100%;
-  padding: 5px;
-  border-radius: 10px;
 }
 
 .problem.column .players .ui.popup {
@@ -44,4 +49,42 @@ body {
 .submission.column {
   padding: 0 0 0 20px !important;
   margin: 0 !important;
+}
+
+.submission.column .submission-content {
+  padding-left: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .ui.header.credits img {
+    display: none !important;
+  }
+
+  .submission.column .submission-content {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .ui.header .content {
+    padding: 0.75rem 0 0 0 !important;
+  }
+
+  .submission-content .ui.header .content {
+    padding: 0 0 0 0.75rem !important;
+  }
+
+  .ui.header.credits .content {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .submission-content .ui.header .content {
+    padding: 0.75rem 0 0 0 !important;
+  }
 }
