@@ -25,3 +25,53 @@ $.getJSON('./players.json', function(data) {
 });
 
 $('.selection.dropdown').dropdown();
+
+$('.ui.form').form({
+  fields: {
+    name: {
+      identifier: 'name',
+      rules: [
+        {
+          type: 'empty',
+          prompt: 'Please enter your name'
+        }
+      ]
+    },
+    email: {
+      identifier: 'email',
+      rules: [
+        {
+          type: 'email',
+          prompt: 'Please enter a valid email'
+        }
+      ]
+    },
+    facebook: {
+      identifier: 'facebook',
+      rules: [
+        {
+          type: 'url',
+          prompt: 'Please enter a valid link'
+        }
+      ]
+    },
+    language: {
+      identifier: 'language',
+      rules: [
+        {
+          type: 'empty',
+          prompt: 'Please select your programming language'
+        }
+      ]
+    },
+    code: {
+      identifier: 'code',
+      rules: [
+        {
+          type: 'empty',
+          prompt: 'Please enter your source code'
+        }
+      ]
+    }
+  }
+});

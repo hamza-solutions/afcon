@@ -212,29 +212,38 @@
         <div class="ui form">
           <div class="required field">
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Name" />
+            <div class="ui icon input">
+              <input id="name" type="text" placeholder="Name" />
+              <i class="user icon"></i>
+            </div>
           </div>
 
           <div class="required field">
             <label for="email">Email</label>
-            <input id="email" type="text" placeholder="Email" />
+            <div class="ui icon input">
+              <input id="email" type="email" placeholder="Email" />
+              <i class="envelope icon"></i>
+            </div>
           </div>
           
           <div class="required field">
-            <label for="facebook-profile-link">Facebook Profile Link</label>
-            <input
-              id="facebook-profile-link"
-              type="text"
-              placeholder="Facebook Profile Link"
-            />
+            <label for="facebook">Facebook Profile Link</label>
+            <div class="ui icon input">
+              <input
+                id="facebook"
+                type="text"
+                placeholder="Facebook Profile Link"
+              />
+              <i class="facebook square icon"></i>
+            </div>
           </div>
 
           <div class="required field">
-            <label for="language">Language</label>
+            <label for="language">Programming Language</label>
             <div class="ui selection dropdown">
-              <input id="language" type="hidden" name="language" />
+              <input id="language" name="language" type="hidden" />
               <i class="dropdown icon"></i>
-              <div class="default text">Language</div>
+              <div class="default text">Programming Language</div>
               <div class="menu">
                 <div class="item" data-value="1">C++ (7.2.0)</div>
                 <div class="item" data-value="2">Python 3.6</div>
@@ -244,11 +253,12 @@
           </div>
 
           <div class="required field">
-            <label for="source-code">Source Code</label>
-            <textarea id="source-code"></textarea>
+            <label for="code">Source Code</label>
+            <textarea id="code"></textarea>
           </div>
 
           <div class="ui fluid submit button">Submit</div>
+          <div class="ui error message"></div>
         </div>
       </div>
     </div>
