@@ -1,71 +1,3 @@
-// var Mode = function(name, caption, extensions) {
-//   this.name = name;
-//   this.caption = caption;
-//   this.mode = 'ace/mode/' + name;
-//   this.extensions = extensions;
-//   var re;
-//   if (/\^/.test(extensions)) {
-//     re =
-//       extensions.replace(/\|(\^)?/g, function(a, b) {
-//         return '$|' + (b ? '^' : '^.*\\.');
-//       }) + '$';
-//   } else {
-//     re = '^.*\\.(' + extensions + ')$';
-//   }
-
-//   this.extRe = new RegExp(re, 'gi');
-// };
-
-// var supportedModes = {
-//   C_Cpp: ['cpp|c|cc|cxx|h|hh|hpp|ino'],
-//   JavaScript: ['js|jsm|jsx'],
-//   Java: ['java'],
-//   CSharp: ['cs'],
-//   Dart: ['dart'],
-//   golang: ['go'],
-//   PHP: ['php|inc|phtml|shtml|php3|php4|php5|phps|phpt|aw|ctp|module'],
-//   Python: ['py'],
-//   Ruby: ['rb|ru|gemspec|rake|^Guardfile|^Rakefile|^Gemfile'],
-//   Rust: ['rs'],
-//   Swift: ['swift'],
-//   ObjectiveC: ['m|mm']
-// };
-
-// var nameOverrides = {
-//   ObjectiveC: 'Objective-C',
-//   CSharp: 'C#',
-//   golang: 'Go',
-//   C_Cpp: 'C and C++'
-// };
-
-// var modes = [];
-// var modesByName = {};
-
-// for (var name in supportedModes) {
-//   var data = supportedModes[name];
-//   var displayName = (nameOverrides[name] || name).replace(/_/g, ' ');
-//   var filename = name.toLowerCase();
-//   var mode = new Mode(filename, displayName, data[0]);
-//   modesByName[filename] = mode;
-//   modes.push(mode);
-// }
-
-// function getModeForPath(path) {
-//   var mode = modesByName.text;
-//   var fileName = path.split(/[\/\\]/).pop();
-//   for (var i = 0; i < modes.length; i++) {
-//     if (modes[i].supportsFile(fileName)) {
-//       mode = modes[i];
-//       break;
-//     }
-//   }
-//   return mode;
-// }
-
-// var editor = ace.edit('editor');
-// editor.setTheme('ace/theme/monokai');
-// editor.session.setMode('ace/mode/javascript');
-
 var players = [
   {
     number: 16,
@@ -207,3 +139,4 @@ for (var player of players) {
 }
 
 $('.player').popup({ inline: true });
+$('.selection.dropdown').dropdown();

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hamza Solutions | AFCON Challenge</title>
+    <link rel="favicon.ico" href="favicon.ico">
     <link
       rel="stylesheet"
       type="text/css"
@@ -31,7 +32,7 @@
 
         <h2 class="ui header">
           <img
-            src="https://sportsration.com/wp-content/uploads/2019/05/IMG_20190519_154234.jpg"
+            src="./images/TUT.jpg"
           />
           <div class="content">
             Egypt @AFCON
@@ -55,14 +56,13 @@
             consists of the name of a player and <b>S</b> (the number of goals
             scored by the player), space-separated. Then you will be asked
             <b>K</b> queries. Each query(line) consists of the name of a player.
-            For each query you have to calculate how many goals the player needs
-            to score in the next match to be the man of the AFCON.<br /><br />
+            For each query you have to calculate the minimum number of goals the
+            player needs to score in the next match to be the man of the
+            AFCON.<br /><br />
             The players are busy training. We heard that you are a clever
             developer so we are challenging you to help the Egyptian players to
             know the minimum number of goals each player needs to score to be
-            the man of AFCON. The output should consist of <b>K</b> lines. Each
-            line consists of the number of goals the player needs to score in
-            the next match to be the man of AFCON.
+            the man of AFCON.
           </p>
         </div>
 
@@ -104,8 +104,9 @@
             style="padding-top: 10px; padding-bottom: 10px;"
           >
             <p>
-              For each query, print the minimum number of goals the player needs
-              to score to be the man of AFCON.
+              The output should consist of <b>K</b> lines. Each
+              line consists of the number of goals the player needs to score in
+              the next match to be the man of AFCON.
             </p>
           </div>
         </div>
@@ -161,30 +162,87 @@
         </div> -->
 
         <div class="ui section divider" style="margin-bottom: 10px;"></div>
-        <p>
-          Problem Credits (Written and Tested by)
-          <a href="https://github.com/kerolloz" target="blank">@Kerolloz</a>
-          <br />
-          Solutions judged and mantained
-          <a href="https://github.com/CodeCoursez" target="blank">@CodeCoursez</a>
-          <br />
-          Developed with
-          <span class="ui red text"><i class="heart icon"></i></span
-          ><a href="http://hamza.solutions/" target="blank">@HamzaSolutions</a>
-        </p>
+        <h3 class="ui header" style="margin: 0;">
+          <img src="./images/hamza.png" style="margin: 0;" />
+          <div class="content">
+            <div class="sub header">
+              <p>
+                Problem Credits (Written and Tested by)
+                <a href="https://github.com/kerolloz" target="blank">
+                  @Kerolloz
+                </a>
+                <br />
+                Solutions judged and mantained
+                <a href="https://github.com/CodeCoursez" target="blank">
+                  @CodeCoursez
+                </a>
+                <br />
+                Made with
+                <span class="ui red text">
+                  <i class="heart icon"></i>
+                  <a href="http://hamza.solutions/" target="blank">
+                    @HamzaSolutions
+                  </a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </h3>
       </div>
-      <div class="seven wide column" style="padding: 0; margin: 0"></div>
+
+      <div class="seven wide column" style="padding: 0 0 0 20px; margin: 0">
+        <h2 class="ui header" >
+          <img src="./images/hamza.png"  />
+          <div class="content">
+            Submit Your Solution
+            <div class="sub header">
+              <p>Hamza will contact the Winner</p>
+            </div>
+          </div>
+        </h2>
+
+        <div class="ui form">
+          <div class="required field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Name" />
+          </div>
+          <div class="required field">
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Email" />
+          </div>
+          <div class="required field">
+            <label for="facebook-profile-link">Facebook Profile Link</label>
+            <input
+              id="facebook-profile-link"
+              type="text"
+              placeholder="Facebook Profile Link"
+            />
+          </div>
+
+          <div class="required field">
+            <label for="language">Language</label>
+            <div class="ui selection dropdown">
+              <input id="language" type="hidden" name="language" />
+              <i class="dropdown icon"></i>
+              <div class="default text">Language</div>
+              <div class="menu">
+                <div class="item" data-value="1">C++ (7.2.0)</div>
+                <div class="item" data-value="2">Python 3.6</div>
+                <div class="item" data-value="3">Java 7</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="required field">
+            <label for="source-code">Source Code</label>
+            <textarea id="source-code"></textarea>
+          </div>
+
+          <div class="ui fluid submit button">Submit</div>
+        </div>
+      </div>
     </div>
-
-    <!-- 
-    <div id="editor"></div>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.6/dist/semantic.min.js"></script>
     <script src="./src.js"></script>
