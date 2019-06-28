@@ -75,3 +75,40 @@ $('.ui.form').form({
     }
   }
 });
+
+//   // $.ajax({
+//   //   type: 'POST',
+//   //   url: '/api/someRestEndpoint',
+//   //   data: formData,
+//   //   success: onFormSubmitted
+//   // });
+// }
+
+function getFieldValue(fieldId) {
+  return $('.ui.form')
+    .form('get field', fieldId)
+    .val();
+}
+
+$('.ui.form .submit.button').api({
+  url: 'https://codecoursez-afcon.herokuapp.com/submissions',
+  method: 'POST',
+  beforeSend: function(settings) {
+    if (!$('.ui.form').form('is valid')) return false;
+    settings.data = {
+      problemId: '5d162b973bff010023cd5a56',
+      name: getFieldValue('name'),
+      email: getFieldValue('email'),
+      facebookProfileLink: getFieldValue('facebook'),
+      langId: getFieldValue('language'),
+      sourceCode: getFieldValue('code')
+    };
+    $('.ui.form').addClass('loading');
+    return settings;
+  },
+  onSuccess: function(data) {
+    $('.ui.form').removeClass('loading');
+    $('.ui.form').form('reset');
+    console.log(data);
+  }
+});
