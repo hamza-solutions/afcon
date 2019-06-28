@@ -1,0 +1,12 @@
+body {
+  padding: 15px;
+}
+.grid {
+  margin: 0;
+}
+.player .image img {
+  width: 100%;
+}
+.popup {
+  padding: 0 !important;
+}
