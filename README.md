@@ -35,17 +35,9 @@ Input | Output
 --- | ---
 3<br/>2<br/>Salah 2<br/>Trezeguet 4<br/>3<br/>Elmohamady 3<br/>AmrWarda 1<br/>Hegazi 2<br/>2<br/>MarawanMohsen 1<br/>Salah 3<br/>3<br/>Trezeguet<br/>Salah<br/>Elmohamady | 3<br/>0<br/>4
 
-#### Input
 
 
-
-#### Output
-
-3<br/>
-0<br/>
-4
-
-----
+___
 
 Problem Credits (Written and Tested by) [@Kerolloz](https://github.com/kerolloz)<br/>
 Solutions Judged and Maintained [@CodeCoursez](https://github.com/CodeCoursez)<br/>
