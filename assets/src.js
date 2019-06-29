@@ -20,6 +20,7 @@ $.getJSON('./players.json', function(data) {
         '</div>' +
         '</div>'
     );
+    $('img.player' + player.number).attr('src', player.image);
   }
   $('.player').popup({ inline: true });
 });

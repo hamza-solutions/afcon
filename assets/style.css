@@ -46,6 +46,31 @@ body {
   padding-bottom: 10px;
 }
 
+.problem.column .explanation .segments .segment {
+  padding: 0 10px !important;
+}
+
+.problem.column .explanation .table td {
+  padding: 0 !important;
+}
+
+.problem.column .explanation .table .card {
+  margin-left: 0px !important;
+}
+
+.problem.column .explanation .card {
+  width: 36px !important;
+  height: 36px !important;
+  display: inline-block;
+  line-height: 0 !important;
+  margin: 0 5px !important;
+}
+
+.problem.column .explanation .card img {
+  width: 36px !important;
+  margin-bottom: -12px !important;
+}
+
 .submission.column {
   padding: 0 0 0 20px !important;
   margin: 0 !important;
